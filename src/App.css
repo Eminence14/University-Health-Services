@@ -1,3 +1,129 @@
+:root {
+	--primary: #a4afc4;
+	--accent: #96a397;
+	--text-col: #344335;
+	--white: #ffffff;
+	--primary-font: "Urbanist";
+	--secondary-font: "Alata";
+}
+
+* {
+	background: 0;
+	border: none;
+	box-sizing: border-box;
+	list-style: none;
+	outline: none;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+}
+@font-face {
+	font-family: Urbanist;
+	src: url(./assets/fonts/Urbanist-VariableFont_wght.ttf);
+}
+@font-face {
+	font-family: Alata;
+	src: url(./assets/fonts/Alata-Regular.ttf);
+}
 body {
-  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: var(--primary-font);
+}
+
+/* general styles */
+.flex {
+	display: flex;
+}
+.alata {
+	font-family: Alata, sans-serif;
+}
+.text {
+	color: var(--text-col);
+}
+
+/*  */
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+/*** Login Page Style ***/
+.login {
+	flex-grow: 1;
+	height: 100%;
+
+	.left {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--primary);
+		width: 100%;
+		text-align: center;
+		gap: 1.5rem;
+		line-height: 2rem;
+		font-weight: 400;
+	}
+	.right {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		background: url(../src/assets/images/Ellipse.svg);
+		background-size: 100%;
+		background-position: left top;
+		background-repeat: no-repeat;
+
+		.text {
+			width: 55%;
+			min-width: 300px;
+		}
+		h2 {
+			color: var(--primary);
+		}
+		p {
+			margin: 0.5rem 0 1rem;
+		}
+		form {
+			flex-direction: column;
+			gap: 1rem;
+			width: 100%;
+		}
+		.input {
+			margin-top: 0.2rem;
+			border: 1px solid var(--accent);
+			border-radius: 8px;
+			position: relative;
+		}
+		span.eye-icon {
+			position: absolute;
+			top: 50%;
+			right: -15px;
+			transform: translateY(-40%);
+			display: inline-block;
+		}
+		.eye-icon > svg {
+			fill: var(--accent);
+			width: 5rem;
+		}
+		
+		.input input {
+			padding: 0.7rem;
+		}
+		input::placeholder {
+			color: var(--accent);
+			font-family: var(--primary-font);
+		}
+		.forgot-pwd {
+			text-decoration: underline;
+			font-weight: 600;
+			font-size: 0.9rem;
+		}
+		button[type="submit"] {
+			background-color: var(--accent);
+			padding: 1rem;
+			border-radius: 8px;
+			color: var(--white);
+			margin-top: 1rem;
+		}
+	}
 }
