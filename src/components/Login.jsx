@@ -9,8 +9,7 @@ const Login = () => {
 			<div className="flex left">
 				<img src={logo} alt="" />
 				<h2 className="alata">
-					The
-					<br /> University Health Service <br /> Login
+					The <br /> University Health Service <br /> &nbsp; Login
 				</h2>
 			</div>
 			<div className="flex right">
@@ -22,13 +21,13 @@ const Login = () => {
 						<div>
 							<label htmlFor="username">Username</label>
 							<div className="input">
-								<input type="text" id="username" placeholder="Username" />
+								<input type="text" name="username" id="username" placeholder="Username" />
 							</div>
 						</div>
 						<div>
 							<label htmlFor="password">Password</label>
 							<div className="input">
-								<input type="text" id="password" placeholder="Password" />
+								<input type="text" name="password" id="password" placeholder="Password" />
 								<span className="eye-icon">
 									<FaRegEyeSlash />
 									{/* <FaEye /> */}
