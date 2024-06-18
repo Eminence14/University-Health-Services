@@ -46,11 +46,11 @@ const Table = () => {
 	return (
 		<div className="htable">
 			<div className="body-top">
-				<div className="search">
+				<div className="searchBox">
 					<img src={search} alt="" />
 					<input type="text" value={filterTerm} onChange={(e) => setFilterTerm(e.target.value)} placeholder="Search" />
 				</div>
-				<div className="filters">
+				<div className="searchBox">
 					<img src={filter} alt="" />
 					<input type="text" value={filterTerm} onChange={(e) => setFilterTerm(e.target.value)} placeholder="Filters" />
 				</div>
