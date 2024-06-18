@@ -9,8 +9,10 @@ import {
 	getPaginationRowModel,
 	getFilteredRowModel,
 } from "@tanstack/react-table";
+import { useNavigate } from "react-router-dom";
 
 const Table = () => {
+	const navigate = useNavigate();
 	const [filterTerm, setFilterTerm] = useState("");
 	const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: 5 });
 	const data = useMemo(() => hospitalData, []);
@@ -35,6 +37,11 @@ const Table = () => {
 		onGlobalFilterChange: setFilterTerm,
 		getFilteredRowModel: getFilteredRowModel(),
 	});
+	// function to redirect to the patient details page when a row is clicked
+	const handleRowClick = (id) => {
+		console.log(id);
+		navigate(`/patients/${id}`);
+	};
 
 	return (
 		<div className="htable">
@@ -45,7 +52,7 @@ const Table = () => {
 				</div>
 				<div className="filters">
 					<img src={filter} alt="" />
-					<input type="text" placeholder="Filters" />
+					<input type="text" value={filterTerm} onChange={(e) => setFilterTerm(e.target.value)} placeholder="Filters" />
 				</div>
 			</div>
 			<table>
@@ -59,13 +66,17 @@ const Table = () => {
 					))}
 				</thead>
 				<tbody>
-					{table.getRowModel().rows.map((row) => (
-						<tr key={row.id}>
-							{row.getVisibleCells().map((cell) => (
-								<td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
-							))}
-						</tr>
-					))}
+					{table.getRowModel().rows.map((row) => {
+						// increment row ID by one to remove zero-based index
+						const id = Number(row.id) + 1;
+						return (
+							<tr key={id} onClick={() => handleRowClick(id)}>
+								{row.getVisibleCells().map((cell) => (
+									<td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
+								))}
+							</tr>
+						);
+					})}
 				</tbody>
 			</table>
 			<div className="buttons">

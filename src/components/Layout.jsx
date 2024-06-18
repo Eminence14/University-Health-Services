@@ -3,6 +3,7 @@ import camera from "../assets/images/camera.svg";
 import human from "../assets/images/human.jpg";
 import arrowDown from "../assets/images/arrow-down.svg";
 import DocLayout from "./DocLayout";
+import PatientDocLayout from "./PatientDocLayout";
 
 const Layout = () => {
 	const [selectedButton, setSelectedButton] = useState(0);
@@ -41,7 +42,8 @@ const Layout = () => {
 				</div>
 			</div>
 			<main>
-				<DocLayout />
+				{/* <DocLayout /> */}
+				<PatientDocLayout />
 			</main>
 		</div>
 	);

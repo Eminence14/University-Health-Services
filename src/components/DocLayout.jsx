@@ -11,7 +11,6 @@ const DocLayout = () => {
 				<p>Manage your patients and their health status</p>
 			</div>
 			<div className="body">
-				
 				<div className="table">
 					<Table />
 				</div>
