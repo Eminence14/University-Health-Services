@@ -1,0 +1,102 @@
+[
+	{
+		"id": 1,
+		"diagnosis": "Typhoid",
+		"prescription": "Ciprofloxacin 500mg twice daily for 10 days"
+	},
+	{
+		"id": 2,
+		"diagnosis": "Malaria",
+		"prescription": "20mg Artemether and 120mg Lumefantrine twice daily for 3 days"
+	},
+	{
+		"id": 3,
+		"diagnosis": "Pneumonia",
+		"prescription": "Amoxicillin 500mg three times daily for 7 days"
+	},
+	{
+		"id": 4,
+		"diagnosis": "Tuberculosis",
+		"prescription": "Isoniazid 300mg daily, Rifampicin 600mg daily, Ethambutol 15mg/kg daily, Pyrazinamide 25mg/kg daily for 2 months, followed by Isoniazid 300mg daily and Rifampicin 600mg daily for 4 months"
+	},
+	{
+		"id": 5,
+		"diagnosis": "HIV/AIDS",
+		"prescription": "Antiretroviral therapy (ART) consisting of a combination of at least three antiretroviral (ARV) drugs: e.g., Tenofovir 300mg, Lamivudine 300mg, Efavirenz 600mg daily"
+	},
+	{
+		"id": 6,
+		"diagnosis": "Diabetes Mellitus",
+		"prescription": "Metformin 500mg twice daily, and lifestyle modifications including diet and exercise"
+	},
+	{
+		"id": 7,
+		"diagnosis": "Hypertension",
+		"prescription": "Lisinopril 10mg once daily, and lifestyle modifications including diet and exercise"
+	},
+	{
+		"id": 8,
+		"diagnosis": "Asthma",
+		"prescription": "Salbutamol inhaler 100mcg as needed, Fluticasone inhaler 250mcg twice daily"
+	},
+	{
+		"id": 9,
+		"diagnosis": "Chronic Obstructive Pulmonary Disease (COPD)",
+		"prescription": "Tiotropium inhaler 18mcg once daily, Salbutamol inhaler 100mcg as needed"
+	},
+	{
+		"id": 10,
+		"diagnosis": "Peptic Ulcer Disease",
+		"prescription": "Omeprazole 20mg once daily for 4-8 weeks"
+	},
+	{
+		"id": 11,
+		"diagnosis": "Hepatitis B",
+		"prescription": "Tenofovir 300mg once daily"
+	},
+	{
+		"id": 12,
+		"diagnosis": "Dengue Fever",
+		"prescription": "Supportive care including hydration, Paracetamol 500mg for fever"
+	},
+	{
+		"id": 13,
+		"diagnosis": "Chikungunya",
+		"prescription": "Supportive care including hydration, Paracetamol 500mg for fever"
+	},
+	{
+		"id": 14,
+		"diagnosis": "Gastroenteritis",
+		"prescription": "Oral rehydration solution (ORS) and Zinc tablets 20mg daily for 10 days"
+	},
+	{
+		"id": 15,
+		"diagnosis": "Migraine",
+		"prescription": "Sumatriptan 50mg at onset, can repeat after 2 hours if needed"
+	},
+	{
+		"id": 16,
+		"diagnosis": "Hypothyroidism",
+		"prescription": "Levothyroxine 50-100mcg daily"
+	},
+	{
+		"id": 17,
+		"diagnosis": "Hyperthyroidism",
+		"prescription": "Methimazole 10-20mg daily"
+	},
+	{
+		"id": 18,
+		"diagnosis": "Anemia",
+		"prescription": "Ferrous sulfate 325mg once daily, Vitamin C 500mg to enhance absorption"
+	},
+	{
+		"id": 19,
+		"diagnosis": "Vitamin D Deficiency",
+		"prescription": "Vitamin D3 2000 IU daily"
+	},
+	{
+		"id": 20,
+		"diagnosis": "Urinary Tract Infection",
+		"prescription": "Nitrofurantoin 100mg twice daily for 5 days"
+	}
+]

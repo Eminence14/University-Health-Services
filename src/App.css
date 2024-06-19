@@ -382,6 +382,22 @@ body {
 			gap: 3rem;
 		}
 
+		.diag-btn {
+			border: 1px solid var(--neutral);
+			border-radius: 8px;
+			padding: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 0.5rem;
+			font-weight: bold;
+			color: var(--text-col);
+		}
+
+		.rm-btn {
+			width: 15px;
+		}
+
 		.save {
 			background-color: var(--primary);
 			padding: 1rem;
